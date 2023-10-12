@@ -1,38 +1,45 @@
 import java.util.Scanner;
 
 public class SimpleInventario {
-    public static void ObtenerNombreArticulo(int id){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Ingrese el nombre del articulo");
-        String Nombre=(scanner.next());
-        System.out.println("Usted ha ingresado el articulo" );
+
+        public static void agragarinventario(String s){
+            System.out.println("Agregar un Articulo: ");
+        }
+
+        public static String obtenerNombreArticulo(){
+            Scanner scanner = new Scanner (System.in);
+            System.out.println("Ingrese el nombre de articulo: ");
+            String nombredeArticulo;
+            nombredeArticulo = scanner.next();
+            System.out.println("Usted a ingresado el articulo" + nombredeArticulo);
+            return nombredeArticulo;
+        }
 
 
-    }
-
-    public static void obtenerArticulo(int id){System.out.println("Ingrese su nombre");
-        Scanner scanner = new Scanner(System.in);
-        String articuloExistente = scanner.next();
-        System.out.println("Usted ha ingresado el articulo existente" +articuloExistente);
 
 
 
 
+        public static void removerArticuloint(int id) {
+        }
 
-    }
+        public static double ObtenerPrecioArticulo(int id) {
+            return 0.00;
+        }
 
-
-        public static void imprimirInventario(){
-            System.out.println("Ingrese su nombre");
+        public static void imprimirinventario(){
+            System.out.println("Ingrese su Nombre");
             Scanner scanner = new Scanner(System.in);
-            String usuario = scanner.next();
-            System.out.println("Bienvenido" + usuario);
+            String usuario;
+            usuario = scanner.next();
+            System.out.println("Bienvenido " + usuario);
+            String articuloExistente = obtenerNombreArticulo();
+            System.out.println("Articulo existente: " + articuloExistente);
+        }
 
-
-
-
-    }
-    public static void main (String[] args) {
-        imprimirInventario();
-    }
+        public static void main(String[] args){
+            imprimirinventario(); }
 }
+
+
+
