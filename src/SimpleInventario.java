@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class SimpleInventario {
      static  String[] articulos = new String[5];
 
-    public  static void AgregarArticulo(){
+    public  static void agregarArticulo(){
         int i =0;
         while (i <= articulos.length) {
-            String articulo = articulos[i]=obtenerNombreArticulo();
+             articulos[i]=obtenerNombreArticulo();
             i++;
 
         }
